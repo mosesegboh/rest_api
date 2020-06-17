@@ -25,7 +25,12 @@ app.use('/posts', postsRoute);
 
 //routes
 app.get('/', (req,res)=>{
+    //the below means we are basically sending a response to the user which is a string
     res.send('we are on home');
+});
+
+app.get('/posts', (req,res)=>{
+    res.send('we are on posts');
 });
 
 
